@@ -67,7 +67,7 @@ displayed if the 'eventbrite' field in the header is not set.
 {% endcomment %}
 {% if page.eventbrite %}
 <strong>Some adblockers block the registration window. If you do not see the
-  registration box below, please check your adblocker settings.</strong>
+  registration box below, please <a href="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt">visit this page</a> instead.</strong>
 <iframe
   src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
   frameborder="0"
@@ -442,12 +442,17 @@ If you do not use Zoom for your online workshop, edit the file
 `_includes/install_instructions/videoconferencing.html`
 to include the relevant installation instructions.
 {% endcomment %}
+
+<h2 id="videocon-setup">Video Conferencing Setup for Online Participants</h2>
 {% include install_instructions/videoconferencing.html %}
 
 {% comment %}
 These are the installation instructions for the tools used
 during the workshop.
 {% endcomment %}
+
+<h2 id="software-setup">Configuring workshop software on your own computer (optional)</h2>
+<p>Participants at this workshop will be provided with access to NOC's Data Science Platform. This requires only a web browser to access it and will provide all software required. Members of NOC will have ongoing access to this after the workshop. People from outside NOC will have access only during the workshop. If you wish to run this software on your own computer after the workshop then see the instructions below.</p>
 
 {% if site.carpentry == "swc" %}
 {% include swc/setup.html %}
