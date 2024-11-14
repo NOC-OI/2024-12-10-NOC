@@ -66,6 +66,7 @@ are not using Eventbrite, or leave it in, since it will not be
 displayed if the 'eventbrite' field in the header is not set.
 {% endcomment %}
 {% if page.eventbrite %}
+<h2 id="registration">Registration</h2>
 <strong>Some adblockers block the registration window. If you do not see the
   registration box below, please <a href="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt">visit this page</a> instead.</strong>
 <div id="eventbrite-widget-container"></div>
