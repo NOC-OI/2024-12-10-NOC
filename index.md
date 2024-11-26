@@ -115,6 +115,16 @@ Sign up to receive future editions and read our full archive: <a href="https://c
 This is a pilot workshop, testing out a lesson that is still under development. The lesson authors would appreciate any feedback you can give them about the lesson content and suggestions for how it could be further improved.
 {% endif %}
 
+<p id="what">
+  <strong>What:</strong>
+  This Software Carpentry course is an introductory course covering using the Unix command line shell, Programming in Python and Version Control with Git. Learners are not expected to have any prior knowledge of these topics. You can find links to the course notes for these topics below:
+  <ul>
+    <li>Shell</li>
+    <li>Python</li>
+    <li>Git</li>
+  </ul>
+</p>
+
 {% comment %}
 AUDIENCE
 
