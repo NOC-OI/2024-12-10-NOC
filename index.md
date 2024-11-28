@@ -180,7 +180,7 @@ Modify the block below if there are any special requirements.
 {% endcomment %}
 <p id="requirements">
   <strong>Requirements:</strong>
-      Participants must bring a laptop with access to a modern web browser. They do not need to install any other software.
+      Participants must bring a laptop with access to a modern web browser and the Eduroam wifi network. They do not need to install any other software.
 </p>
 
 
