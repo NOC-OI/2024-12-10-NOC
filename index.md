@@ -84,6 +84,39 @@ displayed if the 'eventbrite' field in the header is not set.
 
 <h2 id="general">General Information</h2>
 
+
+
+<p id="what">
+  <strong>About this workshop:</strong>
+  This Software Carpentry course is an introductory course covering using the Unix command line shell, Programming in Python and Version Control with Git. Learners are not expected to have any prior knowledge of these topics. You can find links to the course notes for these topics below:
+  <ul>
+    <li><a href="https://swcarpentry.github.io/shell-novice/">Shell</a></li>
+    <li><a href="https://noc-oi.github.io/python-novice-esces/">Python</a></li>
+    <li><a href="https://noc-oi.github.io/git-novice/">Git</a></li>
+  </ul>
+</p>
+
+{% comment %}
+WHO CAN ATTEND?
+
+If you would like to specify who can attend the workshop,
+you can use the section below.
+
+Move the 'endcomment' tag above the beginning of the following
+<p> tag to make this section visible.
+
+Edit the text to match who can attend the workshop. For instance:
+- This workshop is open to affiliates to ABC university.
+- This workshop is open to the public.
+- If you are interested in attending this workshop, contact me@example.com
+  for more information
+{% endcomment %}
+<p id="who-can-attend">
+    <strong>Who can attend?:</strong> Thia workshop course is aimed at reseach staff and students at the National Oceanography Centre. Limited numbers are available for other organisations who collaborate with the National Oceanography Centre. Learners are not expected to have any previous knowledge of the tools that will be presented at the workshop. 
+</p>
+
+
+
 {% comment %}
 LOCATION
 
@@ -156,40 +189,6 @@ Modify the block below if there are any special requirements.
   They should have a few specific software packages installed (listed <a href="#setup">below</a>).
 </p>
 
-{% comment %}
-ACCESSIBILITY
-
-Modify the block below if there are any barriers to accessibility or
-special instructions.
-{% endcomment %}
-<p id="accessibility">
-  <strong>Accessibility:</strong>
-  We are committed to making this workshop
-  accessible to everybody. 
-{% if online == "false" %}
-  The workshop organizers have checked that:
-<p>
-  <ul>
-    <li>The room is wheelchair / scooter accessible.</li>
-    <li>Accessible restrooms are available.</li>
-  </ul>
-{% endif %}
-</p>
-<p>We are dedicated to providing a positive and accessible learning environment for all. 
-  We do not require participants to provide documentation of disabilities or disclose any unnecessary personal information. 
-  However, we do want to help create an inclusive, accessible experience for all participants. 
-  We encourage you to share any information that would be helpful to make your Carpentries experience accessible.
-  To request an accommodation for this workshop, please fill out the 
-  <a href="https://carpentries.typeform.com/to/B2OSYaD0">accommodation request form</a>.
-  If you have questions or need assistance with the accommodation form please <a href="mailto:team@carpentries.org">email us</a>.
-</p>
-<p>
-  <a href="https://glosario.carpentries.org/">Glosario</a> is a multilingual glossary 
-  for computing and data science terms. The glossary helps 
-  learners attend workshops and use our lessons to make sense of computational and programming jargon written in English by offering it 
-  in their native language. Translating data science terms also provides a teaching tool for Carpentries Instructors to reduce barriers 
-  for their learners.
-</p>
 
 {% comment %}
 CONTACT EMAIL ADDRESS
@@ -222,27 +221,34 @@ Display the contact email address set in the configuration file.
   refer to <a href="https://carpentries.org/workshop_faq/#what-are-the-roles-of-everyone-participating-in-a-workshop">our Workshop FAQ</a>.
 </p>
 
+
 {% comment %}
-WHO CAN ATTEND?
+ACCESSIBILITY
 
-If you would like to specify who can attend the workshop,
-you can use the section below.
-
-Move the 'endcomment' tag above the beginning of the following
-<p> tag to make this section visible.
-
-Edit the text to match who can attend the workshop. For instance:
-- This workshop is open to affiliates to ABC university.
-- This workshop is open to the public.
-- If you are interested in attending this workshop, contact me@example.com
-  for more information
-
-<p id="who-can-attend">
-    <strong>Who can attend?:</strong>
-    This workshop is open to ....
-</p>
+Modify the block below if there are any barriers to accessibility or
+special instructions.
 {% endcomment %}
-
+<p id="accessibility">
+  <strong>Accessibility:</strong>
+  We are committed to making this workshop
+  accessible to everybody. 
+{% if online == "false" %}
+  The workshop organizers have checked that:
+<p>
+  <ul>
+    <li>The room is wheelchair / scooter accessible.</li>
+    <li>Accessible restrooms are available.</li>
+  </ul>
+{% endif %}
+</p>
+<p>We are dedicated to providing a positive and accessible learning environment for all. 
+  We do not require participants to provide documentation of disabilities or disclose any unnecessary personal information. 
+  However, we do want to help create an inclusive, accessible experience for all participants. 
+  We encourage you to share any information that would be helpful to make your Carpentries experience accessible.
+  To request an accommodation for this workshop, please fill out the 
+  <a href="https://carpentries.typeform.com/to/B2OSYaD0">accommodation request form</a>.
+  If you have questions or need assistance with the accommodation form please <a href="mailto:team@carpentries.org">email us</a>.
+</p>
 
 {% comment %}
 INTRODUCTION
@@ -252,7 +258,7 @@ the pitch.
 {% endcomment %}
 
 <p>
-<strong><a href="https://carpentries.org">The Carpentries</a></strong> project comprises the <a
+<strong>About the Carpentries:</strong> <a href="https://carpentries.org">The Carpentries</a> project comprises the <a
 href="{{site.swc_site}}">Software Carpentry</a>, <a href="{{site.dc_site}}">Data Carpentry</a>, and
 <a href="{{site.lc_site}}">Library Carpentry</a> communities of Instructors, Trainers, Maintainers,
 helpers, and supporters who share a mission to teach foundational computational and data science
@@ -270,36 +276,6 @@ Sign up to receive future editions and read our full archive: <a href="https://c
 {% elsif site.carpentry == "lc" %}
 {% include lc/intro.html %}
 {% endif %}
-
-{% if site.pilot %}
-This is a pilot workshop, testing out a lesson that is still under development. The lesson authors would appreciate any feedback you can give them about the lesson content and suggestions for how it could be further improved.
-{% endif %}
-
-<p id="what">
-  <strong>What:</strong>
-  This Software Carpentry course is an introductory course covering using the Unix command line shell, Programming in Python and Version Control with Git. Learners are not expected to have any prior knowledge of these topics. You can find links to the course notes for these topics below:
-  <ul>
-    <li><a href="https://swcarpentry.github.io/shell-novice/">Shell</a></li>
-    <li><a href="https://noc-oi.github.io/python-novice-esces/">Python</a></li>
-    <li><a href="https://noc-oi.github.io/git-novice/">Git</a></li>
-  </ul>
-</p>
-
-{% comment %}
-AUDIENCE
-
-Explain who your audience is.  (In particular, tell readers if the
-workshop is only open to people from a particular institution.
-{% endcomment %}
-{% if site.carpentry == "swc" %}
-{% include swc/who.html %}
-{% elsif site.carpentry == "dc" %}
-{% include dc/who.html %}
-{% elsif site.carpentry == "lc" %}
-{% include lc/who.html %}
-{% endif %}
-
-
 
 
 <hr/>
